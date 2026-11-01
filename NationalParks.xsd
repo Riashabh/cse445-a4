@@ -9,8 +9,8 @@
           <xs:complexType>
             <!-- Children in left-to-right order: Name, Phone (one or more), Address -->
             <xs:sequence>
-              <xs:element name="Name" type="xs:string" />
-              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded" />
+              <xs:element name="Name" type="xs:string" maxOccurs="unbounded" />
+              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded" minOccurs="1" />
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
